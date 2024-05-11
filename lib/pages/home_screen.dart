@@ -19,6 +19,8 @@ import 'package:unachcedes/widgets/carousel.dart';
 import 'package:unachcedes/widgets/seccion_informacion_relevante.dart';
 import 'package:unachcedes/widgets/seccion_noticias.dart';
 import 'package:unachcedes/pages/investigacion.dart';
+import 'package:unachcedes/pages/posgrado.dart';
+import 'package:unachcedes/pages/dvvinternational.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -295,7 +297,7 @@ class MyNavigationDrawer extends StatelessWidget {
                 },
                 textColor: Colors.black,
               ),
-              /*ListTile(
+              ListTile(
                 title: const Text('Posgrado'),
                 onTap: () {
                   Navigator.pop(context);
@@ -315,7 +317,7 @@ class MyNavigationDrawer extends StatelessWidget {
                 },
                 textColor: Colors.black,
               ),
-              ListTile(
+              /*ListTile(
                 title: const Text('thank thenk think thonk thunk'),
                 onTap: () {
                   Navigator.pop(context);
