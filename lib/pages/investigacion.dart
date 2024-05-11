@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:unachcedes/widgets/tabla_docentes_cip.dart';
 import 'package:unachcedes/widgets/tabla_docentes_cipsei.dart';
+import 'package:unachcedes/widgets/tabla_docentes_perfil.dart';
 import 'home_screen.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -334,6 +335,186 @@ class Investigacion extends StatelessWidget {
                       padding: const EdgeInsets.only(top: 20.0),
                       child: Image.asset(
                         'assets/logocipf.png',
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+            //PERFIL DESEABLE
+            ListView(
+              children: [
+                Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0),
+                      child: Image.asset(
+                        'assets/logocip.png',
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'Programa para el Desarrollo Profesional Docente, para el Tipo Superior (PRODEP)',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'Este programa busca profesionalizar a los Profesores de Tiempo Completo (PTC) para que alcancen las capacidades de investigación-docencia, desarrollo tecnológico e innovación y con responsabilidad social, se articulen y consoliden en cuerpos académicos y con ello generen una nueva comunidad académica capaz de transformar su entorno',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.center,
+                          children: const [
+                            Text(
+                              'DOCENTES CEDES',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: 12.0,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.center,
+                          children: const [
+                            Text(
+                              'CON RECONOCIMIENTO DEL PROGRAMA PARA EL DESARROLLO PROFESIONAL DOCENTE - PRODEP',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: 12.0,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.center,
+                          children: const [
+                            Text(
+                              'VIGENTE',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: 12.0,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    SingleChildScrollView(
+                      child: Column(
+                        children: const [
+                          Padding(
+                            padding: const EdgeInsets.only(top: 20.0),
+                            child: TablaDocentesPerfil(),
+                          )
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0),
+                      child: ElevatedButton(
+                        onPressed: () {
+                          _launchURL("https://dgip.unach.mx/index.php/academicos/18-perfil-deseable");
+                        },
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              const Color(0xFF18386B)),
+                        ),
+                        child: const Text("Ver fuente"),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0),
+                      child: Image.asset(
+                        'assets/logocipf.png',
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+            //CUERPOS ACADEMICOS
+            ListView(
+              children: [
+                Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'El objetivo principal del Programa para el Desarrollo Profesional para el tipo Superior, es profesionalizar a los/as profesores/as de tiempo completo para que alcancen las capacidades de investigación-docencia, desarrollo tecnológico e innovación y, con responsabilidad social, se articulen y consoliden en cuerpos académicos (CA) y con ello generen una nueva comunidad académica capaz de transformar su entorno. Para alcanzar este objetivo la SEP, a través de la SES ha emprendido en el marco del programa varias acciones enfocadas a promover que los profesores/as de tiempo completo se integren en CA y con ello sustentar la formación de profesionales de buena calidad, responsables y competitivos. La SEP, a través de la SES, convoca a los CA de las IES adscritas al Programa a presentar proyectos que fomenten su desarrollo y consolidación (UNACH-DGIP).',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 15.0,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 40.0),
+                      child: Image.asset(
+                        'assets/tablaacademicos.png',
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+            //PROYECTOS DE INVESTIGACION
+            ListView(
+              children: [
+                Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 40.0),
+                      child: Image.network(
+                        'https://www.cedes.unach.mx/images/2023/P_2023.jpg',
                       ),
                     ),
                   ],

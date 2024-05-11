@@ -81,6 +81,7 @@ flutter:
     - assets/cedesicono.jpg
     - assets/logocip.png
     - assets/logocipf.png
+    - assets/tablaacademicos.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
