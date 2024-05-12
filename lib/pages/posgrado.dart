@@ -23,7 +23,7 @@ class Posgrado extends StatelessWidget {
       child: Scaffold(
         drawer: const MyNavigationDrawer(),
         appBar: AppBar(
-          title: const Text('POSGRADO'),
+          title: const Text('Posgrado'),
           centerTitle: true,
           backgroundColor: Colors.white,
           iconTheme: IconThemeData(color: Colors.black),
@@ -68,7 +68,7 @@ class Posgrado extends StatelessWidget {
                               'En construcción',
                               textAlign: TextAlign.start,
                               style: TextStyle(
-                                fontSize: 16.0,
+                                fontSize: 14.0,
                               ),
                             ),
                           ],

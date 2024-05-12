@@ -82,6 +82,14 @@ flutter:
     - assets/logocip.png
     - assets/logocipf.png
     - assets/tablaacademicos.png
+    - assets/tabladiplomados.png
+    - assets/tabladiplomados2.png
+    - assets/tabladiplomados3.png
+    - assets/tablapublicaciones1.png
+    - assets/tablapublicaciones2.png
+    - assets/tablapublicaciones3.png
+    - assets/tablapublicaciones4.png
+    - assets/tablapublicaciones5.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

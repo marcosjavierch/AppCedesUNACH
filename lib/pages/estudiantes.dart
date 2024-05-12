@@ -68,9 +68,9 @@ class Estudiantes extends StatelessWidget {
                     const Padding(
                       padding: EdgeInsets.only(top: 20.0),
                       child: Text(
-                        'Movilidad',
+                        'MOVILIDAD',
                         style: TextStyle(
-                            fontSize: 16.0,
+                            fontSize: 15.0,
                             fontWeight: FontWeight.bold
                         ),
                       ),
@@ -84,7 +84,7 @@ class Estudiantes extends StatelessWidget {
                               'La movilidad es la posibilidad de cursar un periodo de estudios en una institución nacional o extranjera, con la cual exista un convenio establecido. La movilidad implica tu incorporación como estudiante en otra institución, sin perder tus derechos como alumno de la UNACH.\n\n¡Tú tienes esos beneficios! ¡Aprovéchalos!Mas información: Secretaría Auxiliar de Relaciones Interinstitucionales de la Universidad Autónoma de Chiapas.',
                               textAlign: TextAlign.start,
                               style: TextStyle(
-                                fontSize: 16.0,
+                                fontSize: 14.0,
                               ),
                             )
 
@@ -150,7 +150,7 @@ class Estudiantes extends StatelessWidget {
                             'La Lic. Yeyetsi Cigarroa Martínez, egresada de la Licenciatura de Estadística y Sistemas de Información; participó en la convocatoria del Programa Interinstitucional para el fortalecimiento de la Investigación y Posgrado del Pacifico (Programa DELFIN) y fue seleccionada para realizar una estancia en la Facultad de Ingeniería mecánica y electrónica de la Universidad Autónoma de Nuevo León, en Monterrey, N.L. en el XXII Verano Científico; obteniendo gratos beneficios de la experiencia exitosa en la universidad Regiomontana.',
                             textAlign: TextAlign.start,
                             style: TextStyle(
-                              fontSize: 16.0,
+                              fontSize: 14.0,
                             ),
                           )
 
@@ -183,7 +183,7 @@ class Estudiantes extends StatelessWidget {
                               'La tutoría es el proceso de acompañamiento que tiene como fin orientar y apoyar a los estudiantes durante su formación profesional, bajo la responsabilidad y atención de docentes competentes y formados para esta función.\n\nLas modalidades de tutoría son las formas para realizar la acción tutorial, clasificándose de la siguiente forma:',
                               textAlign: TextAlign.start,
                               style: TextStyle(
-                                fontSize: 16.0,
+                                fontSize: 14.0,
                               ),
                             )
                           ],
@@ -195,7 +195,7 @@ class Estudiantes extends StatelessWidget {
                       child: Text(
                         'A) Individual\nB) Grupo pequeño\nC) Grupo focalizado\nD) Grupo-clase\nE) A distancia\nF) Entre iguales',
                         style: TextStyle(
-                            fontSize: 16.0,
+                            fontSize: 14.0,
                         ),
                       ),
                     ),
@@ -209,7 +209,7 @@ class Estudiantes extends StatelessWidget {
                               'El Tutor(a) es el (la) docente formado para dar acompañamiento al estudiante durante su estancia en la Universidad; se caracteriza por su disposición personal y ética, comprometido para guiar y apoyar el desarrollo integral de los estudiantes bajo su tutela, como una función inherente a su rol de educador.',
                               textAlign: TextAlign.start,
                               style: TextStyle(
-                                fontSize: 16.0,
+                                fontSize: 14.0,
                               ),
                             )
                           ],
@@ -219,9 +219,9 @@ class Estudiantes extends StatelessWidget {
                     const Padding(
                       padding: EdgeInsets.only(top: 20.0),
                       child: Text(
-                        'Informes',
+                        'INFORMES',
                         style: TextStyle(
-                            fontSize: 16.0,
+                            fontSize: 15.0,
                             fontWeight: FontWeight.bold
                         ),
                       ),
@@ -236,7 +236,7 @@ class Estudiantes extends StatelessWidget {
                               'Mtra. Fátima Guadalupe Laguna Vázquez\nCel: 9612606987\nCorreo: patcedes@unach.mx\nPara más informes visite:\nhttps://secacad.unach.mx/index.php/formacion-educativa#tutorias-2',
                               textAlign: TextAlign.start,
                               style: TextStyle(
-                                fontSize: 16.0,
+                                fontSize: 14.0,
                               ),
                             )
                           ],
@@ -262,7 +262,7 @@ class Estudiantes extends StatelessWidget {
                               'Este espacio difunde las becas que emiten el Gobierno federal y otras instancias gubernamentales en sus dos modalidades:\n\n- Presencial\n- A distancia\n(Alumnos del Centro de Estudios para el Desarrollo Municipal y Politicas Públicas)\n\nPara más información, visita:\nhttps://becas.unach.mx/',
                               textAlign: TextAlign.start,
                               style: TextStyle(
-                                fontSize: 16.0,
+                                fontSize: 14.0,
                               ),
                             )
                           ],
@@ -274,12 +274,12 @@ class Estudiantes extends StatelessWidget {
                       child: RichText(
                         text: const TextSpan(
                           style: TextStyle(
-                            fontSize: 16.0,
+                            fontSize: 14.0,
                             color: Colors.black,
                           ),
                           children: <TextSpan>[
                             TextSpan(
-                              text: 'La UNACH\n',
+                              text: 'LA UNACH\n',
                               style: TextStyle(fontWeight: FontWeight.bold), 
                             ),
                             TextSpan(
@@ -294,12 +294,12 @@ class Estudiantes extends StatelessWidget {
                       child: RichText(
                         text: const TextSpan(
                           style: TextStyle(
-                            fontSize: 16.0,
+                            fontSize: 14.0,
                             color: Colors.black,
                           ),
                           children: <TextSpan>[
                             TextSpan(
-                              text: 'El alumno\n',
+                              text: 'EL ALUMNO\n',
                               style: TextStyle(fontWeight: FontWeight.bold), 
                             ),
                             TextSpan(
@@ -323,12 +323,12 @@ class Estudiantes extends StatelessWidget {
                       child: RichText(
                         text: const TextSpan(
                           style: TextStyle(
-                            fontSize: 16.0,
+                            fontSize: 14.0,
                             color: Colors.black,
                           ),
                           children: <TextSpan>[
                             TextSpan(
-                              text: 'Control Escolar\n',
+                              text: 'CONTROL ESCOLAR\n',
                               style: TextStyle(fontWeight: FontWeight.bold), 
                             ),
                             TextSpan(
@@ -343,12 +343,12 @@ class Estudiantes extends StatelessWidget {
                       child: RichText(
                         text: const TextSpan(
                           style: TextStyle(
-                            fontSize: 16.0,
+                            fontSize: 14.0,
                             color: Colors.black,
                           ),
                           children: <TextSpan>[
                             TextSpan(
-                              text: 'Servicios:\n',
+                              text: 'SERVICIOS:\n',
                               style: TextStyle(fontWeight: FontWeight.bold), 
                             ),
                             TextSpan(
@@ -361,9 +361,9 @@ class Estudiantes extends StatelessWidget {
                     const Padding(
                       padding: EdgeInsets.only(top: 20.0),
                       child: Text(
-                        'Cómo Realizar el Pago de Servicios',
+                        'CÓMO REALIZAR EL PAGO DE SERVICIOS',
                         style: TextStyle(
-                            fontSize: 16.0,
+                            fontSize: 15.0,
                             fontWeight: FontWeight.bold
                         ),
                       ),
@@ -373,7 +373,7 @@ class Estudiantes extends StatelessWidget {
                       child: RichText(
                         text: const TextSpan(
                           style: TextStyle(
-                            fontSize: 16.0,
+                            fontSize: 14.0,
                             color: Colors.black,
                           ),
                           children: <TextSpan>[
@@ -398,12 +398,12 @@ class Estudiantes extends StatelessWidget {
                       child: RichText(
                         text: const TextSpan(
                           style: TextStyle(
-                            fontSize: 16.0,
+                            fontSize: 14.0,
                             color: Colors.black,
                           ),
                           children: <TextSpan>[
                             TextSpan(
-                              text: 'Seguro Facultativo\n',
+                              text: 'SEGURO FACULTATIVO\n',
                               style: TextStyle(fontWeight: FontWeight.bold), 
                             ),
                             TextSpan(
@@ -418,12 +418,12 @@ class Estudiantes extends StatelessWidget {
                       child: RichText(
                         text: const TextSpan(
                           style: TextStyle(
-                            fontSize: 16.0,
+                            fontSize: 14.0,
                             color: Colors.black,
                           ),
                           children: <TextSpan>[
                             TextSpan(
-                              text: 'Afiliación a Seguro Facultativo\n',
+                              text: 'AFILIACIÓN A SEGURO FACULTATIVO\n',
                               style: TextStyle(fontWeight: FontWeight.bold), 
                             ),
                             TextSpan(
@@ -450,7 +450,7 @@ class Estudiantes extends StatelessWidget {
                               'Para la Coordinación de Innovación Tecnológica para la Educación, una parte fundamental en su desempeño como área de innovación es la creación de estructuras digitales que permitan al docente y al estudiante converger en mundos paralelos empleando las tecnologías de información.\n\nEs por ello que se han desarrollado sistemas informáticos  que faciliten la práctica docente.\n\nLos sistemas de información que se desarrollan son de carácter académico y administrativo, siendo los sistemas académicos los que están completamente dirigidos a crear ambierntes digitales de aprendizaje para el estudiante.\n\nPara ello se creó "Une-T", que es la Intranet universitaria que le permite a los docentes y estudiantes converger en un mundo digital, en el que los procesos administrativos y académicos son de fácil acceso bajo el esquema de una red social; con el tecleo de una llave única de acceso a los servicios digitales de la UNACH, une-t permite navegar por el sistema de cursos en apoyo a las licenciaturas presenciales: educa-t; consultar documentos que previamente han sido digitalizados por los docentes: lee-t; acceder a cursos para convertirse en docente digital: digitaliza-t; crear su propio blog universitario: bloguea-t; o participar dentro de los MOOCs (Massive Open On-line Course); al mismo tiempo pueden acceder a sistemas como el SIAE (Sistema Institucional de Administración Escolar), el sistema de tutorias, el sistema de pagos en linea (Sysweb), tener acceso a la biblioteca digital, la navegación interna del Portal Web institucional, enterarse al momento de las noticias de la Institución y convivir con sus compañeros al compartir fotos, videos, audios e imágenes, crear grupos, consultar su correo electrónico institucional, establecer relaciones de amistad con personas de otras escuelas y facultades, sin dejar de lado que se puede dejar huella en el camino. une-t es un sistema en el que no se requiere más que entrar desde el portal de la UNACH y acceder, para que integre todas las opciones que se tienen para la comunidad universitaria.',
                               textAlign: TextAlign.start,
                               style: TextStyle(
-                                fontSize: 16.0,
+                                fontSize: 14.0,
                               ),
                             )
 
@@ -498,7 +498,7 @@ class Estudiantes extends StatelessWidget {
                               'Es una actividad de carácter temporal y obligatorio, que deben realizar los estudiantes pasantes de las carreras técnicas y profesionales, como requisito para obtener su Título Profesional. Consiste en la aplicación de los conocimientos adquiridos durante la formación académica del alumno, a fin de aportar un beneficio a la comunidad y el entorno, ya sea de tipo científico, tecnológico, económico y cultural.\n\nBásicamente se fundamenta en los siguientes objetivos:\n- Vinclular a la Universidad con las necesidades sociales\n- Consolidar la formación académica y capacitación profesional de los alumnos\n- Fomentar en el prestador una conciencia de solidaridad.',
                               textAlign: TextAlign.start,
                               style: TextStyle(
-                                fontSize: 16.0,
+                                fontSize: 14.0,
                               ),
                             )
                           ],
@@ -509,12 +509,12 @@ class Estudiantes extends StatelessWidget {
                       child: RichText(
                         text: const TextSpan(
                           style: TextStyle(
-                            fontSize: 16.0,
+                            fontSize: 14.0,
                             color: Colors.black,
                           ),
                           children: <TextSpan>[
                             TextSpan(
-                              text: 'Misión\n',
+                              text: 'MISIÓN\n',
                               style: TextStyle(fontWeight: FontWeight.bold), 
                             ),
                             TextSpan(
@@ -529,12 +529,12 @@ class Estudiantes extends StatelessWidget {
                       child: RichText(
                         text: const TextSpan(
                           style: TextStyle(
-                            fontSize: 16.0,
+                            fontSize: 14.0,
                             color: Colors.black,
                           ),
                           children: <TextSpan>[
                             TextSpan(
-                              text: 'Visión\n',
+                              text: 'VISIÓN\n',
                               style: TextStyle(fontWeight: FontWeight.bold), 
                             ),
                             TextSpan(
@@ -549,7 +549,7 @@ class Estudiantes extends StatelessWidget {
                       child: RichText(
                         text: const TextSpan(
                           style: TextStyle(
-                            fontSize: 16.0,
+                            fontSize: 14.0,
                             color: Colors.black,
                           ),
                           children: <TextSpan>[
@@ -573,7 +573,7 @@ class Estudiantes extends StatelessWidget {
                               'Los periodos para prestar el servicio son dos en el año.\n\n- "A" durante los meses de ENERO - JULIO\n\n- "B" durante los meses de JULIO - DICIEMBRE\n\n- El Servicio Social debe prestarse en un periodo mínimo de 6 meses (4 horas diarias), máximo de 2 años, teniendo una dureción mínima de 480 horas, (establecido en la constitución política méxicana y legislación universitaria) que deberán cumplirse en los programas y modalidades de Servicio Social.',
                               textAlign: TextAlign.start,
                               style: TextStyle(
-                                fontSize: 16.0,
+                                fontSize: 14.0,
                               ),
                             )
                           ],
@@ -588,7 +588,7 @@ class Estudiantes extends StatelessWidget {
                               'Las modalidades son:\n\n- Público: comprende a las instituciones de gobierno federal y estatal.\n\n- Intrauniversitario: Comprende los programas y/o proyectos organizados por las unidades académicas de la propia universidad.\n\n- Municipal: comprende aquellas localidades o municipios en donde se pretende atender problemáticas sociales.',
                               textAlign: TextAlign.start,
                               style: TextStyle(
-                                fontSize: 16.0,
+                                fontSize: 14.0,
                               ),
                             )
                           ],
@@ -603,7 +603,7 @@ class Estudiantes extends StatelessWidget {
                               '*Recuerda que todo el proceso administrativo para poder cumplir con el servicio social es a través del SISSUR.\n\n5. Para inscribirte como solicitante en el SISSUR, debes ingresar como usuario usando tu correo institucional (ejemplo: V180015) y tu contraseña correspondiente.\n\n6. Al registrarte, debes descargar el formato de la hoja de inicio, imprimirlo, colocar una fotografía y firmar para su posterior validación en la coordinación de Extensión de tu centro de estudios.\n\n7. Simultáneamente, debes considerar la selección de la modalidad y dependencia donde prestaras el servicio, para integrar el catálogo de proyectos y programas.\n\n8. Posteriormente ingresas nuevamente al SISSUR para efectuar la auto asignación, enseguida descargas el oficio de comisión que deberás imprimir para presentar el primer día de tu servicio social en la dependencia oficial.',
                               textAlign: TextAlign.start,
                               style: TextStyle(
-                                fontSize: 16.0,
+                                fontSize: 14.0,
                               ),
                             )
                           ],
@@ -614,12 +614,12 @@ class Estudiantes extends StatelessWidget {
                       child: RichText(
                         text: const TextSpan(
                           style: TextStyle(
-                            fontSize: 16.0,
+                            fontSize: 14.0,
                             color: Colors.black,
                           ),
                           children: <TextSpan>[
                             TextSpan(
-                              text: '\nAl finalizar el servicio deberás\n',
+                              text: '\nAL FINALIZAR EL SERVICIO DEBERÁS\n',
                               style: TextStyle(fontWeight: FontWeight.bold), 
                             ),
                             TextSpan(
@@ -661,7 +661,7 @@ class Estudiantes extends StatelessWidget {
                               'Con tu Tarjeta Universitaria Inteligente revisa los beneficios que obtienes:',
                               textAlign: TextAlign.start,
                               style: TextStyle(
-                                fontSize: 16.0,
+                                fontSize: 14.0,
                               ),
                             )
                           ],

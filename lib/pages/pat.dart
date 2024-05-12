@@ -60,7 +60,7 @@ class PAT extends StatelessWidget {
                               'No hay artículos en esta categoría. Si se muestran las subcategorías en esta página, puede que tengan artículos.',
                               textAlign: TextAlign.start,
                               style: TextStyle(
-                                fontSize: 16.0,
+                                fontSize: 14.0,
                               ),
                             ),
                           ],

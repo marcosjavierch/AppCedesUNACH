@@ -2,6 +2,7 @@ import 'package:unachcedes/widgets/tabla_legislacion.dart';
 import 'package:unachcedes/widgets/tabla_sitios_interes.dart';
 import 'package:unachcedes/widgets/tabla_encuentros_dvv.dart';
 import 'package:flutter/material.dart';
+import 'package:unachcedes/widgets/tabladvvdiplomados.dart';
 import 'home_screen.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -27,10 +28,10 @@ class DVVInt extends StatelessWidget {
         drawer: const MyNavigationDrawer(),
         appBar: AppBar(
           centerTitle: true,
-          title: const Text('ACERCA DE'),
+          title: const Text('DVV-International'),
           iconTheme: IconThemeData(color: Colors.black),
           titleTextStyle: const TextStyle(
-            fontSize: 16,
+            fontSize: 15,
             fontWeight: FontWeight.normal,
             color: Colors.black,
         ),
@@ -68,7 +69,7 @@ class DVVInt extends StatelessWidget {
                 Column(
                   children: [
                      Padding(
-                      padding: EdgeInsets.only(bottom: 20.0, left: 15),
+                      padding: EdgeInsets.only(bottom: 20.0, left: 15,top: 25.0),
                       child: Center(
                         child: Wrap(
                           alignment: WrapAlignment.start,
@@ -77,7 +78,7 @@ class DVVInt extends StatelessWidget {
                               'En el marco de las acciones de colaboración entre el Centro de Estudios para el Desarrollo Municipal y Políticas Públicas (UNACH CEDES) y DVV-International, se participó en el Encuentro Binacional Guatemala-México 2023: “Centros de Formación Diálogos hacia un currículo de Gestión y Administración” los días 05 y 06 de Octubre en la ciudad de Antigua Guatemala; con el propósito de fortalecer la articulación entre los países participantes en el ámbito de la educación y que enriquecerá las perspectivas y conocimientos que sentará las bases para elaborar procesos de formación centrado en la gestión y administración de centros de educación de jóvenes y adultos.',
                               textAlign: TextAlign.start,
                               style: TextStyle(
-                                fontSize: 16.0,
+                                fontSize: 14.0,
                               ),
                             ),
                           ],
@@ -94,7 +95,7 @@ class DVVInt extends StatelessWidget {
                               'En el encuentro participaron: FLACSO-Guatemala, PRODESSA, Fundación Tierra Nuestra, Conalfagt, CUNOROC Centro Universitario de NOr Occidente, CEEX SAN PABLO, Dideduc Quetzaltenango, Save the children Guatemala, Cedeca La Albarrada, Pronatura Sur, A. C., ICHEJA CHIAPAS, Tsomanotik, Voces Mesoamericanas Acción con Pueblos Migrantes, Patronato Pro Educación Guaquitepec y UNACH CEDES.',
                               textAlign: TextAlign.start,
                               style: TextStyle(
-                                fontSize: 16.0,
+                                fontSize: 14.0,
                               ),
                             ),
                           ],
@@ -111,7 +112,7 @@ class DVVInt extends StatelessWidget {
                               'Al encuentro asistió el Dr. Dorian Francisco Gómez Hernández; Coordinador de Proyectos de DVV-International en CEDES; en las actividades lúdicas y de reflexión en temáticas diversas como “Planeación y evaluación de necesidades”, “Gestión interna y liderazgo”, “Trabajo en red y cooperación”, “Seguimiento y evaluación” y “Gestión financiera” orientado a desarrollar un Currículum de Gestión y Administración adaptado a las necesidades de los centros de formación integral para personas jóvenes y adultas en la región transfronteriza entre Guatemala y México.',
                               textAlign: TextAlign.start,
                               style: TextStyle(
-                                fontSize: 16.0,
+                                fontSize: 14.0,
                               ),
                             ),
                           ],
@@ -128,7 +129,7 @@ class DVVInt extends StatelessWidget {
                               'EVIDENCIAS',
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontSize: 12.0,
+                                fontSize: 13.0,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
@@ -168,7 +169,7 @@ class DVVInt extends StatelessWidget {
                       child: Column(
                         children: const [
                           Padding(
-                            padding: const EdgeInsets.only(top: 20.0),
+                            padding: const EdgeInsets.only(top: 20.0, bottom: 30.0),
                             child: TablaEncuentrosDVV(),
                           )
                         ],
@@ -179,34 +180,40 @@ class DVVInt extends StatelessWidget {
               ],
             ),
             //ANTECEDENTES
-            /*ListView(
+            ListView(
               children: [
                 Column(
                   children: [
-                    const Padding(
-                      padding: EdgeInsets.only(top: 20.0),
-                      child: Text(
-                        'Nuestra Historia',
-                        style: TextStyle(
-                            fontSize: 16.0,
-                            fontWeight: FontWeight.bold
-                        ),
-                      ),
-                    ),
                     Padding(
-                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15, right: 10),
+                      padding: const EdgeInsets.only(top: 25.0, bottom: 20.0, left: 15, right: 10),
                       child: Center(
                         child: Wrap(
                           alignment: WrapAlignment.start,
                           children: const [
                             Text(
-                              'El Centro de Estudios para el Desarrollo Municipal y Políticas Públicas surgió como una propuesta de la comunidad universitaria dentro del Seminario Universidad para el Desarrollo en el marco de la integración del Proyecto Académico 2006–2010. Se propuso como una estrategia para la extensión del conocimiento y apoyo a los municipios de la entidad. Por ello, el 1° de octubre del 2007 se emite el Acuerdo de Creación del Centro de Estudios para el Desarrollo Municipal y Políticas Públicas (CEDES), como una Dependencia Académica Universitaria, hoy Centro de Estudios, para consolidar las funciones y objetivos de la Universidad, conforme a los artículos 9 de la Ley Orgánica y 10 del Estatuto General, respectivamente, con sede en la ciudad de Tuxtla Gutiérrez, Chiapas (Acuerdo, artículo1°).\n\nEl primer antecedente del cedes, proviene de los esfuerzos de la Universidad Autónoma de Chiapas (UNACH) por impulsar, desde su quehacer fundamental, el desarrollo local y el bienestar colectivo, reconociendo al municipio como el referente obligado para vincular la realidad social con las capacidades y conocimientos generados en el aula.\n\nEstos esfuerzos que desde la investigación y la extensión ya venía realizando la UNACH, se consolidaron con la incorporación del Centro de Vinculación para el Desarrollo Municipal al Proyecto Académico 2006-2010, dentro del Seminario Universidad y Desarrollo, como un proyecto especial orientado a “… impulsar el desarrollo de los 10 municipios en los que tiene presencia la Universidad, a partir del fortalecimiento del modelo de gestión, el impulso a su economía con sustentabilidad, rescate y conservación de sus rasgos socioculturales”. (Estrada Arévalo, 2007)\n\nDe esta manera, se puso en marcha un despliegue de funciones, proyectos y actividades, orientados a contribuir a la expansión del bienestar y el desarrollo municipal, a través de una propuesta académica vinculada a la gerencia social y a la creación de redes de colaboración interinstitucional en la que convergieron todos estos esfuerzos.\n\nFue así como en octubre de 2007 nació formalmente el cedes, como una institución orientada al estudio del desarrollo municipal y las políticas públicas, incorporando a la oferta educativa en la modalidad virtual, el programa de la Licenciatura en Gerencia Social.\n\nEn 2008 se iniciaron los trabajos para el desarrollo de los programas educativos de la Licenciatura en Desarrollo Municipal y Gobernabilidad (LDMYG), la Licenciatura en Seguridad de Poblaciones Humanas ante Desastres (LSPHD) y la Licenciatura en Estadística y Sistemas de Información (LESI), las cuales se pusieron en marcha en el ciclo agosto-diciembre de 2009.\n\nEn 2010, el programa educativo de la LSPHD, se desincorporó del CEDES y se integró al Centro Mesoamericano de Estudios en Salud Pública y Desastres (CEMESAD), pero ese mismo año, el CEDES inició los trabajos para el diseño y posterior autorización de los programas de estudio correspondientes a las maestrías en Prospectiva y Estudios Estratégicos (MPYEE) y en Cooperación Internacional y Desarrollo en América Latina y el Caribe (MCIDALC), en la modalidad escolarizada.\n\nTambién en 2010, el CEDES se integró a la Dependencia de Educación Superior (DES) conocida como Centros Universitarios para el Desarrollo (DES-CUDES), a la que están integrados el Centro de Estudios para la Construcción de la Ciudadanía y la Seguridad (CECOCISE), el Centro Universidad Empresa (CEUNE) y el Instituto de Estudios Indígenas (IEI).\n\nHoy en día la perspectiva del CEDES camina hacia la consolidación de sus programas académicos, el fortalecimiento de su vinculación con la realidad social y su proyección en el ámbito nacional e internacional como espacio de vanguardia.',
+                              'Desde el año 2017, la Universidad Autónoma de Chiapas (UNACH) en México, a través del Centro de Estudios para el Desarrollo Municipal y Políticas Públicas (CEDES); el Instituto de Cooperación Internacional de la Asociación Alemana para la Educación de Adultos (Deutscher Volkshochschul-Verband e.V., DVV), DVV Internacional; la Facultad Latinoamericana de Ciencias Sociales (FLACSO) con sede en Guatemala y la Unidad Académica en Quetzaltenango en Guatemala; y la Universidad de San Carlos en Huehuetenango (USAC), Guatemala, con su Unidad de Vinculación del Centro Universitario del Nor Occidente (CUNOROC); realizaron un intercambio de experiencias e investigaciones relacionadas con el eje: Migración, Educación y Desarrollo (MED), específicamente en los departamentos de Guatemala y los municipios de Chiapas, México que se ubican en la zona transfronteriza entre ambos países, y que presentan un alto índice de pobreza, pobreza extrema y marginación.',
                               textAlign: TextAlign.start,
                               style: TextStyle(
-                                fontSize: 16.0,
+                                fontSize: 14.0,
                               ),
                             )
-
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 20.0, left: 15, right: 10),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'Como resultado de dichos intercambios, se formaliza la Alianza para el Desarrollo Transfronterizo “ADT”, con la finalidad de elaborar productos de investigación que fundamenten propuestas de políticas públicas para impulsar y fortalecer procesos de formación-capacitación, con los diferentes actores del ámbito social, público y privado de la zona transfronteriza que comparten México y Guatemala.',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            )
                           ],
                         ),
                       ),
@@ -215,7 +222,7 @@ class DVVInt extends StatelessWidget {
                 ),
               ],
             ),
-            ///ATRIBUCIONES
+            //CONVENIOS
             ListView(
               children: [
                 Column(
@@ -223,9 +230,19 @@ class DVVInt extends StatelessWidget {
                     const Padding(
                       padding: EdgeInsets.only(top: 20.0),
                       child: Text(
-                        'Atribuciones',
+                        'CONVENIOS',
                         style: TextStyle(
-                            fontSize: 16.0,
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.0),
+                      child: Text(
+                        'Carta de Intención',
+                        style: TextStyle(
+                            fontSize: 15.0,
                             fontWeight: FontWeight.bold
                         ),
                       ),
@@ -237,58 +254,22 @@ class DVVInt extends StatelessWidget {
                           alignment: WrapAlignment.start,
                           children: const [
                             Text(
-                              'I. Impartir enseñanza superior con equidad, calidad y pertinencia en los niveles profesional asociado, licenciatura y posgrado en diversas modalidades —escolarizada, semiescolarizada, virtual, abierta y a distancia—;\n\nII. Impartir formación continua para la capacitación y certificación de competencias profesionales de actores del desarrollo municipal;\n\nIII. Realizar investigación científica básica y aplicada, estudios, planes, programas y proyectos de desarrollo territorial en los ámbitos regional, municipal, micro regional y local;\n\nIV. Definir sus propias líneas de investigación, que respondan a la realidad y problemática del desarrollo municipal;\n\nV. Promover y organizar actividades de difusión, divulgación y socialización, del conocimiento científico y tecnológico para el desarrollo municipal;\n\nVI. Colaborar con las instituciones públicas y organizaciones privadas y sociales, en el marco de las políticas públicas y a través de la vinculación, en el estudio y formulación de planes, programas, proyectos y acciones orientadas al desarrollo municipal, prioritariamente de población con menores índices de desarrollo humano;\n\nVII. Proporcionar consultoría y asesoría técnica a los actores del desarrollo municipal en la planeación, evaluación y gestión social e institucional de proyectos de desarrollo social, tecnológico, económico, cultural y ambiental;\n\nVIII. Acopiar, validar, integrar y sistematizar información oportuna, relevante, homogénea y confiable necesaria para el diagnóstico continuo, la planeación y la toma de decisiones para el desarrollo municipal;\n\nIX. Promover la movilidad de su personal académico y alumnos con instituciones nacionales e internacionales;\n\nX. Planear, programar, administrar y evaluar su propio desarrollo económico y administrativo, de manera sustentable, en el marco de las normas y políticas universitarias;\n\nXI. Generar recursos alternos para su operación y desarrollo; y\n\nXII. Las demás que resulten necesarias para el cumplimiento de sus fines, conforme a la legislación universitaria.',
+                              'El ocho de septiembre de 2018 se firmó una Carta de Intención en las instalaciones de la Facultad de Derecho de la Universidad Autónoma de Chiapas, con la finalidad de establecer de manera conjunta los mecanismos que les permitiera formalizar en el futuro un Convenio General de Colaboración.',
                               textAlign: TextAlign.start,
                               style: TextStyle(
-                                fontSize: 16.0,
+                                fontSize: 14.0,
                               ),
                             )
                           ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-            ///OBJETIVOS
-            ListView(
-              children: [
-                Column(
-                  children: [
-                    const Padding(
-                      padding: EdgeInsets.only(top: 20.0),
-                      child: Text(
-                        'Objetivo General',
-                        style: TextStyle(
-                            fontSize: 16.0,
-                            fontWeight: FontWeight.bold
                         ),
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(top: 20.0, left: 15),
-                      child: Center(
-                        child: Wrap(
-                          alignment: WrapAlignment.start,
-                          children: const [
-                            Text(
-                              'Impulsar el mejoramiento del nivel de desarrollo sustentable de los municipios de la entidad a través de la docencia, la investigación y la extensión universitaria, estableciendo redes de colaboración entre la UNACH, los Ayuntamientos Municipales y demás actores del desarrollo',
-                              textAlign: TextAlign.start,
-                              style: TextStyle(
-                                fontSize: 16.0,
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                    ),
-                    const Padding(
                       padding: EdgeInsets.only(top: 20.0),
                       child: Text(
-                        'Objetivos Específicos:',
+                        'Convenio General',
                         style: TextStyle(
-                            fontSize: 16.0,
+                            fontSize: 15.0,
                             fontWeight: FontWeight.bold
                         ),
                       ),
@@ -300,12 +281,134 @@ class DVVInt extends StatelessWidget {
                           alignment: WrapAlignment.start,
                           children: const [
                             Text(
-                              'I. Apoyar el desarrollo de los municipios de la entidad, principalmente aquellos de menor índice de desarrollo humano.\n\nII. Crear las bases para el desarrollo de la gerencia social y la administración pública con un enfoque municipal, formando profesionales con ese perfil.\n\nIII. Brindar servicios para la formación de recursos humanos en los municipios que fortalezcan la gestión administrativa y la organización social.\n\nIV. Desarrollar estudios sobre la situación de los municipios de Chiapas basados en los procesos y condiciones sociales.\n\nV. Realizar proyectos de investigación/acción, para atender los problemas que obstaculizan el desarrollo social.\n\nVI. Brindar asesoría y servicios especializados de evaluación y gestión social sobre el cumplimiento de indicadores y de proyectos de desarrollo municipal.\n\nVII. Fomentar la vinculación de docentes/investigadores y estudiantes con los municipios.\n\nVIII. Integrar un acervo documental y bases de datos sobre los municipios de Chiapas para brindar un servicio de consulta a investigadores e instituciones públicas y privadas.',
+                              'El 01 de agosto del 2020, se firmó un Convenio General de Colaboración, que se encuentra vigente, cuyo objeto es la colaboración en materia de Migración, Educación y Desarrollo (MED).',
                               textAlign: TextAlign.start,
                               style: TextStyle(
-                                fontSize: 16.0,
+                                fontSize: 14.0,
                               ),
-                            ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.0),
+                      child: Text(
+                        'Convenios Específicos',
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'El 01 de agosto del 2020, se firma un convenio específico para realizar el Diplomado en Modalidad a Distancia denominado “Desarrollo Transfronterizo con Enfoque Sostenible” en su primera emisión.',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'El 01 de junio del 2021, se firma un convenio específico para realizar el Diplomado en Modalidad a Distancia denominado “Desarrollo Transfronterizo con Enfoque Sostenible” en su segunda emisión.',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'El 02 de enero de 2022, se firma un convenio de subvención para realizar el Diplomado en Modalidad a Distancia denominado "Desarrollo Transfronterizo con enfoque Sostenible", en su 3ª emisión y una APP-Móvil en el marco de la EPJA.',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'El 01 de junio del 2022, se firma un adéndum al convenio de subvención, para la participación en el “XIII Simposio Internacional Educación y Cultura y IV Taller Internacional de Evaluación Educativa y Acreditación de la Educación Superior” en Varadero, Cuba; del 15 al 17 de junio del 2022.',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'El 01 de junio de 2022, se firma un convenio de cooperación tripartita, junto con la Universidad de Matanzas (CUBA) para la realización del “XIII Simposio Internacional Educación y Cultura y IV Taller Internacional de Evaluación Educativa y Acreditación de la Educación Superior” en Varadero, Cuba; del 15 al 17 de junio del 2022.',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.0),
+                      child: Text(
+                        'Convenio de colaboración institucional ',
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'El 02 de enero de 2023, se firma un Convenio de colaboración institucional, para la realización del Proyecto denominado: "Tejiendo nuevas estrategias enfocadas en: Migración, Educación y Desarrollo en el contexto transfronterizo Guatemala-México, por los derechos de todas y todos".',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            )
                           ],
                         ),
                       ),
@@ -314,112 +417,584 @@ class DVVInt extends StatelessWidget {
                 ),
               ],
             ),
-            ///ORGANIZACION
+            //DIPLOMADOS
+            ListView(
+              children: [
+                Column(
+                  children: [
+                    const Padding(
+                      padding: EdgeInsets.only(top: 20.0),
+                      child: Text(
+                        'Resultados',
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.0),
+                      child: Text(
+                        'Diplomado en Desarrollo Transfronterizo con enfoque Sostenible 2020 (Primera Generación) ',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'El propósito del Diplomado, es analizar el contexto socio-económico-político-cultural de la región transfronteriza entre México y Guatemala, desde la perspectiva de los sujetos que habitan en el territorio, a partir del eje: Migración, Educación y Desarrollo, para recuperar los insumos necesarios que permitan la formulación de planes de desarrollo.',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 40.0),
+                      child: Image.asset(
+                        'assets/tabladiplomados.png',
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'Se inscribieron un total de 25 estudiantes de Chiapas y Guatemala, de los cuales 15 concluyeron el Diplomado satisfactoriamente, 11 son de México y 4 son de Guatemala, 10 son hombres y 5 son mujeres, además que 8 de ellos fueron invitados por la UNACH, 3 por DVV-International, 3 por FLACSO Y 1 por CUNOROC.',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'Como trabajo final de actividades del Diplomado, los educandos realizaron una ponencia sobre un problema relacionado con el eje MED, en la zona transfronteriza de Chiapas y Guatemala.',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'Derivado de lo anterior, un total de 13 educandos, 3 docentes y 2 organizadores, participaron como ponentes o coautores, en 11 trabajos de investigación, que fueron presentados en el Pre-Coloquio Internacional Ciencias de La Educación, Ciencias Administrativas y Desarrollo Municipal y Políticas Públicas, organizado por la Universidad de Matanzas, Cuba en coordinación con la Universidad de Tangamanga de San Luis Potosí, la Universidad Autónoma de San Luís Potosí y la Universidad Autónoma de Chiapas, en México; la Universidad de Maranhao, Brasil; el Centro Latinoamericano de Estudios Epistemológicos (CESPE); y DVV-International, a llevarse a cabo en la Ciudad de Varadero Cuba; en la modalidad a distancia del 5 al 7 de mayo de 2021. Cabe señalar, que el pago de las inscripciones de los educandos al Pre-Coloquio, se logró gracias a las becas otorgadas por DVV-International, ya que se redireccionó el recurso del estudio de campo.',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'Como aporte del Diplomado en cuanto a la investigación relacionada con el eje MED, de las11 ponencias presentadas en el Pre-Coloquio Internacional Ciencias de La Educación, Ciencias Administrativas y Desarrollo Municipal y Políticas Públicas, un total de 7 ponencias fueron seleccionadas por el comité académico del Coloquio, para ser publicadas en dos revistas indexadas y arbitradas:',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              '- Revista Iberoamericana de Investigación Educativa\n- Atenas periodo 2021\n- Atenas periodo 2022',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'Ponencias presentados en el Pre-Coloquio Internacional Ciencias de La Educación, Ciencias Administrativas y Desarrollo Municipal y Políticas Públicas y en proceso de publicación.',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    SingleChildScrollView(
+                      child: Column(
+                        children: const [
+                          Padding(
+                            padding: const EdgeInsets.only(top: 20.0),
+                            child: TablaDVVDiplomados(),
+                          )
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.0),
+                      child: Text(
+                        'Diplomado en Desarrollo Transfronterizo con enfoque Sostenible 2021 (Segunda Generación).',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.0),
+                      child: Text(
+                        'Propósito',
+                        textAlign: TextAlign.start,
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'Considerando los resultados de la primera Generación del Diplomado para el Desarrollo Transfronterizo con enfoque Sostenible, y con el apoyo de DVV-International da inicio la segunda generación del Diplomado, realizando los ajustes pertinentes en el diseño pedagógico, instruccional y atendiendo las recomendaciones realizadas de la primera generación\nPara esta segunda generación del Diplomado, se decide colegiadamente que un alumno destacado de la primera generación, se incorpore en el Módulo 4. Teorías del Desarrollo con Rostro Humano, ya que demostró tener amplio dominio del tema y con soporte de la Universidad de San Carlos de Guatemala, donde el labora.',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 40.0),
+                      child: Image.asset(
+                        'assets/tabladiplomados2.png',
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'Se inscribieron un total de 58 estudiantes, de los cuales 32 son hombres y 26 son mujeres, con un rango de edad entre los 20 y 63 años, distribuidos en 12 países: Argentina, Cuba, Ecuador, Honduras, Panamá, Paraguay, Perú, Puerto Rico, República Dominicana, Venezuela, Guatemala y México; además, se cuenta con la participación de becarios de los municipios de Chiapas: Berriozábal, Motozintla, Oxchúc, San Cristóbal de Las Casas, Tapachula, Tenejapa, Tuxtla Chico, Tuxtla Gutiérrez, y Zinacantán.',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'Egresaron un total de 21 estudiantes:\n- 12 mujeres y 9 hombres\n- 3 Bachillerato, 5 Licenciatura, 9 Maestría, 3 Doctorado y 1 Posdoctorado\n- 1 de Argentina, 1 de Perú, 1 de Honduras, 5 de Guatemala y 13 de México',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'Cargos:\n- Oficial de Estándares de la Coordinación Latinoamericana y del Caribe de Pequeños(as) Productores(as) y Trabajadores(as) de Comercio Justo (CLAC) de Perú\n- Cabo de Bomberos del Heroico y Benemérito Cuerpo de Bomberos de Honduras.\n- Oficial de Patrocinio para Socias Locales de Guatemala\n- Encargada de sede académica UNACH, en San Cristóbal de Las Casas.\n- Coordinador de la Licenciatura en Estadística y Sistemas de información\n- Encargada de Control Escolar del CEDES\n- Docentes, investigadores, personal administrativo\n- Estudiantes Universitarios (Licenciatura en Desarrollo Municipal y Gobernabilidad).',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'Estados de México: Veracruz, Tabasco, Oaxaca y Chiapas.\nMunicipios de Chiapas: Tenejapa, San Cristóbal de Las Casas, Tapachula, Berriozábal, Tuxtla Gutiérrez.',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'Como aporte del Diplomado en cuanto a la investigación relacionada con el eje MED, los estudiantes participaron en el “XIII Simposio Internacional Educación y Cultura y IV Taller Internacional de Evaluación Educativa y Acreditación de la Educación Superior” en la ciudad de Varadero en junio de 2022, en la modalidad virtual.',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              '\n- DVV-International, a través del Convenio de colaboración con UNACH, realizó un financiamiento para el registro de 19 ponencias de los 21 estudiantes (2 coautores).\n- Se presentaron en el Simposio 19 ponencias virtuales, asesoradas por los Instructores de cada uno de los módulos y en especial del módulo VI, el Dr. Julio Guillén Velázquez.\n- Hasta el momento, se ha publicado 2 artículos de estudiantes, como resultado de la participación en el Simposio en la Revista Iberamericana de Investigación en Educación (RIIED) de Ecuador, en la Revista Atenas Científico Pedagógica de Facultad de Educación de la Universidad de Matanzas en Cuba; en la Revista Iberamericana de Investigación en Educación (RIIED) de Ecuador; en la Revista Entrevista Académica por la Universidad de Matanzas Cuba; y en un Libro, Editorial de la Universidad de Matanzas.',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.0),
+                      child: Text(
+                        'Diplomado en Desarrollo Transfronterizo con enfoque Sostenible 2023 (Tercera Generación).',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.0),
+                      child: Text(
+                        'Propósito',
+                        textAlign: TextAlign.start,
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'Considerando los resultados de la primera y segunda Generación del Diplomado para el Desarrollo Transfronterizo con enfoque Sostenible, y con el apoyo de DVV-International; da inicio la tercera generación del Diplomado, en el que atendiendo las recomendaciones realizadas de la segunda generación, se realizaron los ajustes pertinentes en el rediseño pedagógico (curricular) e instruccional.\nLa tercera generación del Diplomado, permite analizar el contexto socio-económico-político-cultural de la región transfronteriza entre México y Guatemala, desde la perspectiva de los sujetos que habitan en el territorio, a partir del enfoque Migración, Educación y Desarrollo.',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 40.0),
+                      child: Image.asset(
+                        'assets/tabladiplomados3.png',
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'Se inscribieron un total de 55 educandos, de los cuales 25 son hombres, 28 son mujeres y 2 de la comunidad LGBTTTIQ. 3 cuentan con bachillerato, 35 con licenciatura, 12 con maestría y 5 con doctorado. A nivel internacional, se tiene presencia en países como Bolivia, Brasil, Guatemala, México, Honduras, y Paraguay. A nivel nacional en estados como Chiapas, Guerrero, Sonora, Yucatán y Tabasco. A nivel municipal se tiene presencia en Tuxtla, Tapachula, Tonalá, Suchiapa, Berriozábal, Amatenango de la frontera, Acala, Copainalá, La Trinitaria, Escuintla y San Cristóbal.',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.0),
+                      child: Text(
+                        'Participan estudiantes, docentes y empleados de las siguientes instituciones:',
+                        textAlign: TextAlign.start,
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              '- Universidad Politécnica de Chiapas\n- Universidad Autónoma de Guerrero\n- Universidad Autónoma de Chiapas\n- Universidad Ciencias del Perú\n- Universidad Federal de Lavras en Brasil\n- Secretaría de Educación Pública en Chiapas\n- Seguridad Alimentaria Mexicana\n- Secretaria Municipal de Educação de São Paulo en Brasil\n- Secretaria de Medio Ambiente e Historia Natural del Estado de Chiapas\n- ONG Servicios para el desarrollo Guatemala\n- MUSAC / CONECULTA Chiapas\n- Ministerio de Planificación de Bolivia\n- Universidad Juárez Autónoma de Tabasco\n- Universidad del País Innova en Tuxtla Gutiérrez\n- Universidad San Carlos de Guatemala\n- Instituto Nacional de Pesca\n- Ayuntamiento de Tonalá, Chiapas\n- Centro Universitario de NorOccidente de la Universidad San Carlos de Guatemala\n- Congreso del Estado de Chiapas\n- Universidad Diego Rivera de Chiapas\n- Consejo Nacional de Fomento Educativo\n- Procuraduría de protección de Niñas, niños, adolescentes y la familia de DIF Chiapas.\n- Red Franciscana para Migrantes Guatemala RFM (voluntario)\n- Escuela de Lenguas Tapachula Campus IV Universidad Autónoma de Chiapas\n- H. Ayuntamiento Venustiano Carranza',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.0),
+                      child: Text(
+                        'Cargos',
+                        textAlign: TextAlign.start,
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              '- Docentes\n- Administrativos\n- Chofer\n- Estudiante\n- Técnico de Campo\n- Coordinadora pedagógica\n- Técnico Especializado en medio ambiente\n- Vicerrector del Instituto Educativo IG\n- La titular de la procuraduría de protección de Niñas, niños, adolescentes y la familia de DIF Chiapas.\n- Jefe de la Unidad de Recursos Materiales y Servicios Generales\n- Coordinador Académico General\n- Coordinadora de CONOCER\n- Oficial de proyectos\n- Voluntaria',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'El Diplomado dio inicio el 09 de enero de 2023 y finalizará el 31 de julio de 2023, y se tiene programada como evidencia final una participación como ponentes, mediante un trabajo de investigación alineado al eje Migración, Educación y Desarrollo, en un evento académico internacional.',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+            //PUBLICACIONES
             ListView(
               children: [
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.network(
-                      'https://cedes.unach.mx/images/organigrama.png',
-                      height: 320,
-                    ),
-                    const Text(
-                        'última revisión agosto del 2015'
+                    const Padding(
+                      padding: EdgeInsets.only(top: 20.0),
+                      child: Text(
+                        'Publicaciones de las y los estudiantes del Diplomado en Desarrollo Transfronterizo con enfoque Sostenible',
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(top: 20.0),
-                      child: ElevatedButton(
-                        onPressed: () {
-                          _launchURL("cedes.unach.mx/images/manualcedesAprobado2014.pdf");
-                        },
-                        style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(
-                              const Color(0xFF18386B)),
+                      padding: EdgeInsets.only(top: 20.0),
+                      child: Text(
+                        '"3 Generaciones"',
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
                         ),
-                        child: const Text("Manual de Organización y Funciones"),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.0),
+                      child: Text(
+                        'Primera Generación',
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.0),
+                      child: Text(
+                        'Revista Iberoamericana de Investigación Educativa (RIIED)',
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 40.0),
+                      child: Image.asset(
+                        'assets/tablapublicaciones1.png',
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.0),
+                      child: Text(
+                        'Revista Atenas 2021',
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 40.0),
+                      child: Image.asset(
+                        'assets/tablapublicaciones2.png',
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.0),
+                      child: Text(
+                        'Segunda Generación',
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.0),
+                      child: Text(
+                        'Revista Iberoamericana de Investigación Educativa (RIIED)',
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 40.0),
+                      child: Image.asset(
+                        'assets/tablapublicaciones3.png',
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.0),
+                      child: Text(
+                        'Revista Entrevista Académica Electrónica 2022',
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 40.0),
+                      child: Image.asset(
+                        'assets/tablapublicaciones4.png',
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.0),
+                      child: Text(
+                        'Revista Atenas 2022',
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 40.0),
+                      child: Image.asset(
+                        'assets/tablapublicaciones5.png',
                       ),
                     ),
                   ],
                 ),
               ],
             ),
-            ///UBICACION
-            Padding(
-              padding: const EdgeInsets.only(top: 20.0, left: 15, right: 15),
-              child: Column(
-                children: [
-                  Center(
-                    child: Wrap(
-                      alignment: WrapAlignment.center,
-                      children: const [
-                        Padding(
-                          padding: EdgeInsets.only(top: 20.0),
-                          child: Text(
-                            'Calle Orquídeas No. 192 esquina Calle Laureles Fraccionamiento Jardines de Tuxtla C.P. 29020',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontSize: 16.0,
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(top: 20.0),
-                          child: Text(
-                            'Tuxtla Gutiérrez, Chiapas, México',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontSize: 16.0,
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(top: 20.0),
-                          child: Text(
-                            'cedes@unach.mx',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontSize: 16.0,
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(top: 20.0),
-                          child: Text(
-                            'Teléfono de Oficina: 01 (961) 61 7 80 00 ext. 5541',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontSize: 16.0,
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(top: 20.0),
-                          child: Text(
-                            '(961) 60 4 73 54',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontSize: 16.0,
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(top: 20.0),
-                          child: Text(
-                            'Nota: Por motivos actuales del COVID-19 por el momento se atenderá a través del correo electrónico',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontSize: 16.0,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            ///IDENTIDAD
+            //UNIDAD DE VINCULACION DOCENTE
             ListView(
               children: [
                 Column(
@@ -427,74 +1002,10 @@ class DVVInt extends StatelessWidget {
                     const Padding(
                       padding: EdgeInsets.only(top: 20.0),
                       child: Text(
-                        'Identidad',
+                        'Unidad de Vinculación Docente',
                         style: TextStyle(
-                            fontSize: 16.0,
+                            fontSize: 15.0,
                             fontWeight: FontWeight.bold
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, left: 15, right: 10),
-                      child: Center(
-                        child: Wrap(
-                          alignment: WrapAlignment.start,
-                          children: [
-                            Image.network(
-                              'https://cedes.unach.mx/images/CEDEsedificio.png',
-                              height: 250,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(top: 20.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center, // Centra los elementos horizontalmente
-                        children: [
-                          Expanded(
-                            child: Center(
-                              child: Image.network(
-                                'https://cedes.unach.mx/images/unach.png',
-                                height: 180,
-                              ),
-                            ),
-                          ),
-                          Expanded(
-                            child: Center(
-                              child: Image.network(
-                                'https://cedes.unach.mx/images/CEDES-color-oficial_transp.png',
-                                height: 180,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, left: 15, right: 15),
-                      child: Row(
-                        children: const [
-                          Expanded(
-                            child: Text(
-                              'Nuestro lema',
-                              textAlign: TextAlign.left,
-                              style: TextStyle(
-                                fontSize: 16.0,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    const Padding(
-                      padding: EdgeInsets.only(top: 20.0, left: 10),
-                      child: Text(
-                        '"Por la conciencia de la necesidad de servir"',
-                        style: TextStyle(
-                            fontSize: 20.0,
                         ),
                       ),
                     ),
@@ -505,10 +1016,10 @@ class DVVInt extends StatelessWidget {
                           alignment: WrapAlignment.start,
                           children: const [
                             Text(
-                              'Aunque previamente se había emitido una convocatoria para que la UNACH, mediante concurso, tuviera su lema. En la XII Sesión de Consejo celebrada el 11 de septiembre de 1976, en el campus I, se acordó que el lema "Por la Conciencia de la Necesidad " enviada por Fernando Orduña Calcáceo fuera el ganador, el cual se consideró que estaba incompleto y el Consejo decidió agregarle "de servir"; por lo que finalmente quedó Por la Conciencia de la Necesidad de Servir. "Es una forma Dialéctica de la Libertad", explicó su autor en una entrevista telefónica en el año de 1986.',
+                              'De acuerdo con la definición y opinión del actual rector, Dr. Ángel René Estrada Arévalo, las Unidades de Vinculación Docente, son instrumentos flexibles que permiten adaptar los planes de estudio a la solución de problemas en el desarrollo económico, social y cultural; concebidas para enriquecer las currículas, son procesos que al mismo tiempo que influyen en los fenómenos sociales presentan efectos positivos en lo académico y dinamizan las funciones sustantivas.\n\nFunción de docencia: En docencia, las UVD ligan la actividad de los profesores con el sector externo y retroalimentan inmediatamente los planes de estudio al analizar los fenómenos sociales.\n\nFunción investigación: El nexo entre la formación teórica que el estudiante recibe en aulas y talleres y las actividades de servicio que efectúan profesores y alumnos se establece aplicando el método científico, concebido como un instrumento para el estudio de los problemas y la adquisición del conocimiento.\nFunción extensión: Para superar el carácter burocrático que ha adquirido el servicio social es necesario retomar su significado curricular, al lado de la docencia y la investigación.',
                               textAlign: TextAlign.start,
                               style: TextStyle(
-                                fontSize: 16.0,
+                                fontSize: 14.0,
                               ),
                             ),
                           ],
@@ -516,181 +1027,285 @@ class DVVInt extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(top: 20.0, left: 15, right: 15),
-                      child: Row(
-                        children: const [
-                          Expanded(
-                            child: Text(
-                              'Nuestro Escudo',
-                              textAlign: TextAlign.left,
-                              style: TextStyle(
-                                fontSize: 16.0,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(top: 20.0, left: 15),
-                        child: GestureDetector(
-                          onTap: () {
-                            _launchURL(
-                                "www.unach.mx/acerca-de/identidad#nuestro-escudo");
-                          },
-                          child: const Text(
-                            'https://www.unach.mx/acerca-de/identidad#nuestro-escudo',
-                            style: TextStyle(
-                             color: Color(0xFF18386B))
-                            ),
-                          ),
-                        ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, left: 15, right: 15),
-                      child: Row(
-                        children: const [
-                          Expanded(
-                            child: Text(
-                              'La creacion de la UNACH',
-                              textAlign: TextAlign.left,
-                              style: TextStyle(
-                                fontSize: 16.0,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, left: 15),
-                      child: GestureDetector(
-                        onTap: () {
-                          _launchURL(
-                              "www.unach.mx/acerca-de/identidad#la-creacion-de-la-unach");
-                        },
-                        child: const Text(
-                            'https://www.unach.mx/acerca-de/identidad#la-creacion-de-la-unach',
-                            style: TextStyle(
-                                color: Color(0xFF18386B))
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, left: 15, right: 15),
-                      child: Row(
-                        children: const [
-                          Expanded(
-                            child: Text(
-                              'El fundador de la UNACH',
-                              textAlign: TextAlign.left,
-                              style: TextStyle(
-                                fontSize: 16.0,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, left: 15),
-                      child: GestureDetector(
-                        onTap: () {
-                          _launchURL(
-                              "www.unach.mx/acerca-de/identidad#el-fundador-de-la-unach");
-                        },
-                        child: const Text(
-                            'https://www.unach.mx/acerca-de/identidad#el-fundador-de-la-unach',
-                            style: TextStyle(
-                                color: Color(0xFF18386B))
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, left: 15, right: 15),
-                      child: Row(
-                        children: const [
-                          Expanded(
-                            child: Text(
-                              'Nuestro más grande benefactor',
-                              textAlign: TextAlign.left,
-                              style: TextStyle(
-                                fontSize: 16.0,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, left: 15),
-                      child: GestureDetector(
-                        onTap: () {
-                          _launchURL(
-                              "www.unach.mx/acerca-de/identidad#nuestro-mas-grande-benefactor");
-                        },
-                        child: const Text(
-                            'https://www.unach.mx/acerca-de/identidad#nuestro-mas-grande-benefactor',
-                            style: TextStyle(
-                                color: Color(0xFF18386B))
-                        ),
-                      ),
-                    ),
-                    const Padding(
                       padding: EdgeInsets.only(top: 20.0),
                       child: Text(
-                        ' Manual Básico de Identidad ',
+                        'Primera Fase: Planificación',
                         style: TextStyle(
-                            fontSize: 16.0,
+                            fontSize: 15.0,
                             fontWeight: FontWeight.bold
                         ),
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(top: 20.0, left: 15, right: 10),
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 10),
                       child: Center(
                         child: Wrap(
                           alignment: WrapAlignment.start,
-                          children: [
-                            Image.network(
-                              'https://cedes.unach.mx/images/Manual_identidad.jpg',
-                              height: 250,
+                          children: const [
+                            Text(
+                              'El punto de partida es la identificación de los problemas específicos, planteados por grupos y organizaciones sociales que requieren acciones duraderas y efectivas para su transformación.\n\nPosteriormente los profesores caracterizan la problemática en términos científicos, la correlacionan con asignaturas o módulos de los planes de estudio y trasladan a un plano científico educativo, sujeto a un proceso de investigación-acción, se definen los objetivos docentes en cuanto a los conocimientos que los estudiantes deben adquirir para explicar el problema e investigar para el diseño de instrumentos de obtención de información y el servicio mediante actividades técnicas.',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
                             ),
                           ],
                         ),
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(top: 20.0, bottom: 20),
-                      child: ElevatedButton(
-                        onPressed: () {
-                          _launchURL("www.unach.mx/images/documentos/Manual_identidad_UNACH.pdf");
-                        },
-                        style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(
-                              const Color(0xFF18386B)),
+                      padding: EdgeInsets.only(top: 20.0),
+                      child: Text(
+                        'Segunda Fase: Ejecución',
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
                         ),
-                        child: const Text("Ir al manual"),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 10),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'El desarrollo de las Unidades de Vinculación Docente debe insertarse en la programación académica de las asignaturas o módulos y formar parte de ellos, ajustando con flexibilidad lo programado a la práctica.\n\nEn esta fase un punto de gran importancia es la evaluación, en ella se realizan seminarios de integración global del proceso, objetivos, participación de alumnos, docentes, grupos sociales y de las organizaciones particulares. En este espacio, y con una metodología adecuada, es posible retroalimentar los planes de estudio y conocer la pertinencia social de la formación social universitaria.',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.0),
+                      child: Text(
+                        'UVD: Competencias digitales en la Educación de Personas Jóvenes y Adultas (EPJA)',
+                        style: TextStyle(
+                            fontSize: 14.0,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0),
+                      child: Image.network(
+                        'https://www.cedes.unach.mx/images/Captura_de_pantalla_2023-05-27_a_las_183932.png',
+                        height: 250,
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.0),
+                      child: Text(
+                        'Propósito',
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 10),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'Analizar el nivel de dominio de las competencias digitales de personas jóvenes y adultas desfavorecidas que habitan en la zona transfronteriza de Chiapas y Guatemala, para proponer iniciativas de alfabetización y ciencia abierta, que permitan disminuir la brecha digital.',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.0),
+                      child: Text(
+                        'Participan docentes y alumnos:',
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 10),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'Centro de Estudios para el Desarrollo Municipal y Políticas Públicas (UNACH-CEDES)\n- Dra. Andrea Mena Álvarez\n- Dr. Dorian Francisco Gómez Hernández\n- Dr. Julio Guillén Velázquez',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 10),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'Programa de Ejercicio Profesional Supervisado Multidisciplinario (EPSUM) de la Universidad de San Carlos de Guatemala (USAC)\n- Mtro. Luis Alfredo Arias Hernández',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 10),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'Facultad Latinoamericana de Ciencias Sociales (FLACSO-Guatemala)\n- Mtra. María del Rosario Martínez Álvarez',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 10),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'Lic. En Seguridad Alimentaria de la Escuela de Sistemas Alimentarios, UNACH, Tapachula, Chiapas\n- Dr. Ángel René Estrada Arévalo',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 10),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'Licenciatura en Ingeniería en Desarrollo y Tecnologías de Software de la Facultad De Negocios Campus IV UNACH, Tapachula\n- Mtro. Jesús Arnulfo Zacarias Santos',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 10),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'Secretaría de Identidad Responsabilidad Social Universitaria UNACH (Istmo-Costa y Soconusco)\n- Mtro. Esteban Sánchez Martínez',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.0),
+                      child: Text(
+                        'Comienzo de la UVD',
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 10),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'El pasado 26 de junio de 2023, dio inicio en Unión Juárez, Chiapas; México la Unidad de Vinculación Docente (UVD); a cargo del Centro de Estudios para el Desarrollo Municipal y Políticas Públicas (CEDES), de la Universidad Autónoma de Chiapas (UNACH) y el Instituto de Cooperación Internacional de la Asociación Alemana de Educación de Adultos (DVV), con la participación del Ayuntamiento Municipal de Unión Juárez, la Escuela de Sistemas Alimentarios, la Facultad de Negocios Campus IV UNACH, Tapachula, la Secretaría de Identidad Responsabilidad Social Universitaria UNACH (Tuxtla e Istmo-Costa y Soconusco); todas las instituciones anterior unidas con el propósito de identificar el acceso y uso de las tecnologías de la información y la comunicación de la población que habita en la zona transfronteriza entre México (Chiapas) y Guatemala.\n\nLa finalidad es impulsar políticas públicas que permitan alfabetizar digitalmente a la población y con ello disminuir la brecha digital.\nParticipan docentes y estudiantes de la Licenciatura en Estadística y Sistemas de Información (CEDES) y de la Licenciatura en Ingeniería y Desarrollo de Tecnologías de Software (Campus Tapachula).\nConsulta la noticia en el siguiente enlace: https://cedes.unach.mx/index.php/component/k2/item/320-alfabetizacion-digital-para-personas-jovenes-y-adultas-en-zonas-transfronterizas',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0),
+                      child: Image.network(
+                        'https://www.cedes.unach.mx/images/356612451_6417486591606261_1118302505330810850_n.png',
+                        height: 250,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0),
+                      child: Image.network(
+                        'https://www.cedes.unach.mx/images/355487785_6417407551614165_5508088582499535624_n.png',
+                        height: 250,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0),
+                      child: Image.network(
+                        'https://www.cedes.unach.mx/images/355128332_6417531221601798_8252776413483556887_n.png',
+                        height: 250,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0),
+                      child: Image.network(
+                        'https://www.cedes.unach.mx/images/356230159_6417407761614144_7648504715439975002_n.png',
+                        height: 250,
                       ),
                     ),
                   ],
                 ),
               ],
             ),
-            ///Modelo Educativo UNACH
+            //APP CAPJA
             ListView(
               children: [
                 Column(
                   children: [
                     const Padding(
-                      padding: EdgeInsets.only(top: 20.0),
+                      padding: EdgeInsets.only(top: 20.0, left: 15),
                       child: Text(
-                        'Nuestro Modelo Educativo',
+                        'Aplicación Móvil: Ciencia Abierta para Personas Jóvenes y Adultas',
                         style: TextStyle(
-                            fontSize: 16.0,
+                            fontSize: 15.0,
                             fontWeight: FontWeight.bold
                         ),
                       ),
@@ -702,10 +1317,10 @@ class DVVInt extends StatelessWidget {
                           alignment: WrapAlignment.start,
                           children: const [
                             Text(
-                              'La Universidad Autónoma de Chiapas (UNACH), como máxima casa de estudios del estado, tiene como razón de ser la formación integral de sus estudiantes, como parte medular de su misión; para ello, plantea este Modelo Educativo y Académico, que constituye el documento rector que fundamenta y orienta el ser y quehacer académico universitario. El Modelo Educativo y Académico busca generar sinergias entre las estructuras y los procesos académicos y administrativos, para mejorar la calidad educativa, coadyuvar al cumplimiento de la misión y visión de la Universidad, así como para atender las necesidades que la sociedad actual requiere, enfocados en la formación integral de profesionales competentes, críticos, éticos, con conciencia ciudadana y socialmente responsables.',
+                              'Durante el 2022 y el 2023, se diseña la Aplicación Móvil: Ciencia Abierta para Personas Jóvenes y Adultas. Es una aplicación digital para la planificación y evaluación de las ofertas educativas de los socios de DVV, elaborada de manera participativa entre las organizaciones contrapartes y aliados estratégicos.',
                               textAlign: TextAlign.start,
                               style: TextStyle(
-                                fontSize: 16.0,
+                                fontSize: 14.0,
                               ),
                             ),
                           ],
@@ -713,559 +1328,60 @@ class DVVInt extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(top: 20.0, bottom: 20),
-                      child: ElevatedButton(
-                        onPressed: () {
-                          _launchURL("www.unach.mx/component/k2/download/342_b3d38cc23198d67e5118db0c3b31e0eb");
-                        },
-                        style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(
-                              const Color(0xFF18386B)),
+                      padding: EdgeInsets.only(top: 20.0),
+                      child: Text(
+                        'Descripción',
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
                         ),
-                        child: const Text("Ver Modelo Educativo y Academico"),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'Desarrollo de la Interfaz gráfica de la APP, que contiene hipervínculos a las páginas oficiales de las contrapartes. Tiene el propósito de proveer información de las ofertas educativas, a través, de los distintos medios electrónicos de las contrapartes y aliados estratégicos de DVV-International. Con la CAPJA, se dan conocer los beneficios, plan de estudios, campo laboral y demás características que ofrecen los programas educativos ofertados. La aplicación se encuentra lista en su primera etapa, se continua con el proceso de actualización de la información de cada una de las contrapartes y aliados.\n\nLa aplicación "Ciencia Abierta para Personas Jóvenes y Adultas" es una plataforma interactiva que busca acercar la ciencia de una manera lúdica y educativa a la población. A través de la aplicación, los usuarios pueden acceder a una gran variedad de contenidos científicos, noticias y recursos de aprendizaje, diseñados específicamente para personas jóvenes y adultas con diferentes niveles de conocimiento.\nLa aplicación cuenta con una interfaz amigable y fácil de usar, que permite a los usuarios explorar diferentes áreas de la Educación. Además, la aplicación ofrecerá herramientas interactivas, juegos y desafíos que fomentan el aprendizaie y la curiosidad.\n\nLa aplicación también incluye una sección de noticias científicas actualizadas, para que los usuarios estén al día en los últimos avances y descubrimientos en el mundo de la ciencia, así como de las actividades que realizan las contrapartes y aliados de DVV-International. Además, ofrece recursos de aprendizaje adicionales, como videos educativos, infografías y artículos especializados, para aquellos que buscan profundizar su conocimiento en áreas específicas.',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            ),
+                          ]
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.0),
+                      child: Text(
+                        'Disponible para su descarga en iOS y Android:',
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0),
+                      child: Image.network(
+                        'https://www.cedes.unach.mx/images/2023/images.png',
+                        height: 40,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0),
+                      child: Image.network(
+                        'https://www.cedes.unach.mx/images/2023/share_google_play_logo.png',
+                        height: 80,
                       ),
                     ),
                   ],
                 ),
               ],
             ),
-            //LEGISLACION
-            ListView(
-              children: [
-                Column(
-                  children: const [
-                    Padding(
-                      padding: EdgeInsets.only(top: 20.0),
-                      child: Text(
-                        'Legislacion',
-                        style: TextStyle(
-                            fontSize: 16.0,
-                            fontWeight: FontWeight.bold
-                        ),
-                      ),
-                    ),
-                    TablaLegislacion()
-                  ],
-                ),
-              ],
-            ),
-            //PROTOCOLOS
-            ListView(
-              children: [
-                Column(
-                  children: [
-                    const Padding(
-                      padding: EdgeInsets.only(top: 20.0),
-                      child: Text(
-                        'Protocolos',
-                        style: TextStyle(
-                            fontSize: 16.0,
-                            fontWeight: FontWeight.bold
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, left: 15, right: 10),
-                      child: Center(
-                        child: Wrap(
-                          alignment: WrapAlignment.start,
-                          children: [
-                            Image.network(
-                              'https://www.cedes.unach.mx/images/programa.jpg',
-                              height: 250,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, bottom: 20),
-                      child: ElevatedButton(
-                        onPressed: () {
-                          _launchURL("https://www.unach.mx/component/k2/download/295_df6b5b836c7f30249998d90d949ddff8");
-                        },
-                        style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(
-                              const Color(0xFF18386B)),
-                        ),
-                        child: const Text("Ver Programa contra la violencia de genero."),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, bottom: 20),
-                      child: ElevatedButton(
-                        onPressed: () {
-                          _launchURL("https://www.unach.mx/component/k2/download/296_2a2a1df7ced64b1a1bbe06d0ea8662b0");
-                        },
-                        style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(
-                              const Color(0xFF18386B)),
-                        ),
-                        child: const Text("Ver Protocolo de actuación ante situaciones de violencia."),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, left: 15, right: 10),
-                      child: Center(
-                        child: Wrap(
-                          alignment: WrapAlignment.start,
-                          children: [
-                            Image.network(
-                              'https://www.cedes.unach.mx/images/Lineamientostecnicosdeseguridadsanitaria.png',
-                              height: 250,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, bottom: 20),
-                      child: ElevatedButton(
-                        onPressed: () {
-                          _launchURL("https://www.cedes.unach.mx/images/Lineamientostecnicosdeseguridadsanitaria.pdf");
-                        },
-                        style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(
-                              const Color(0xFF18386B)),
-                        ),
-                        child: const Text("Leer archivo."),
-                      ),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-            //ACERCA DE
-            ListView(
-              children: [
-                Column(
-                  children: [
-                    const Padding(
-                      padding: EdgeInsets.only(top: 20.0),
-                      child: Text(
-                        'Acerca de UNACH',
-                        style: TextStyle(
-                            fontSize: 16.0,
-                            fontWeight: FontWeight.bold
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, left: 15, right: 10),
-                      child: Center(
-                        child: Wrap(
-                          alignment: WrapAlignment.start,
-                          children: [
-                            Image.network(
-                              'https://www.cedes.unach.mx/images/unach_1920.jpg',
-                              height: 250,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, left: 15, right: 15),
-                      child: Row(
-                        children: const [
-                          Expanded(
-                            child: Text(
-                              'Misión',
-                              textAlign: TextAlign.left,
-                              style: TextStyle(
-                                fontSize: 16.0,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
-                      child: Center(
-                        child: Wrap(
-                          alignment: WrapAlignment.start,
-                          children: const [
-                            Text(
-                              'La Universidad Autónoma de Chiapas es una Institución de Educación Superior pública y autónoma, socialmente responsable y con vocación de servicio; que forma de manera integral a profesionales competentes, críticos, éticos, con conciencia ciudadana y ambiental. La UNACH genera, divulga y aplica el conocimiento científico, tecnológico y humanístico; difunde la cultura y el arte, promueve el deporte y extiende sus servicios, vinculada con la sociedad en entornos locales, nacionales e internacionales; con personal calificado y programas educativos pertinentes y de calidad, para contribuir al desarrollo sustentable, al bienestar social, la cultura de paz, la democracia, la equidad y los derechos humanos.',
-                              textAlign: TextAlign.start,
-                              style: TextStyle(
-                                fontSize: 16.0,
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, left: 15, right: 15),
-                      child: Row(
-                        children: const [
-                          Expanded(
-                            child: Text(
-                              'Visión 2030',
-                              textAlign: TextAlign.left,
-                              style: TextStyle(
-                                fontSize: 16.0,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
-                      child: Center(
-                        child: Wrap(
-                          alignment: WrapAlignment.start,
-                          children: const [
-                            Text(
-                              'La Universidad Autónoma de Chiapas en el 2030 es una institución reconocida internacionalmente por el desempeño profesional y social de sus egresados; sus programas educativos pertinentes y acreditados; por los resultados de su actividad científica, humanística y tecnológica; su vinculación mediante acciones de colaboración y cooperación con organizaciones de los sectores público, privado y social, con la guía del Modelo Educativo Institucional y de una gestión transparente y efectiva, que impulsa el desarrollo de Chiapas y de México.',
-                              textAlign: TextAlign.start,
-                              style: TextStyle(
-                                fontSize: 16.0,
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, left: 15, right: 15),
-                      child: Row(
-                        children: const [
-                          Expanded(
-                            child: Text(
-                              'Principios universitarios',
-                              textAlign: TextAlign.left,
-                              style: TextStyle(
-                                fontSize: 16.0,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
-                      child: Center(
-                        child: Wrap(
-                          alignment: WrapAlignment.start,
-                          children: const [
-                            Text(
-                              '1. PRINCIPIO DE AUTONOMÍA. Es la capacidad de las instituciones de darse a sí mismas su propia Ley y gobernarse por ésta, y de ordenar su mundo interior para otorgarse su nomos. Por tanto, este término evoca concepciones tales como: autoconciencia, autodeterminación, independencia y, en definitiva, libertad. La libertad que emana de la autonomía debe ser reflejada en la actividad de nuestra universidad, pues sin ella no se podría realizar la investigación, la docencia y la expresión de las ideas, ya que sólo en libertad y en autonomía el hombre es capaz de generar y transmitir conocimientos.',
-                              textAlign: TextAlign.start,
-                              style: TextStyle(
-                                fontSize: 16.0,
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
-                      child: Center(
-                        child: Wrap(
-                          alignment: WrapAlignment.start,
-                          children: const [
-                            Text(
-                              '2. PRINCIPIO DE LIBERTAD. Es actuar bajo los dictados de la propia conciencia, con respeto al marco legal, a los derechos de terceros y dignidad de la persona.',
-                              textAlign: TextAlign.start,
-                              style: TextStyle(
-                                fontSize: 16.0,
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
-                      child: Center(
-                        child: Wrap(
-                          alignment: WrapAlignment.start,
-                          children: const [
-                            Text(
-                              '3. PRINCIPIO DE JUSTICIA. Es la voluntad y la determinación continua de otorgarle a cada quién lo que le corresponde, en un plano de equidad.',
-                              textAlign: TextAlign.start,
-                              style: TextStyle(
-                                fontSize: 16.0,
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
-                      child: Center(
-                        child: Wrap(
-                          alignment: WrapAlignment.start,
-                          children: const [
-                            Text(
-                              '4. PRINCIPIO DE EQUIDAD. Consiste en tratar a los integrantes de la comunidad universitaria de manera respetuosa, amena y sin discriminación de ningún tipo.',
-                              textAlign: TextAlign.start,
-                              style: TextStyle(
-                                fontSize: 16.0,
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
-                      child: Center(
-                        child: Wrap(
-                          alignment: WrapAlignment.start,
-                          children: const [
-                            Text(
-                              '5. PRINCIPIO DE SERVICIO. Son todas aquellas acciones que adoptamos de forma permanente, con la finalidad de beneficiar a nuestros semejantes.',
-                              textAlign: TextAlign.start,
-                              style: TextStyle(
-                                fontSize: 16.0,
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, bottom: 20),
-                      child: ElevatedButton(
-                        onPressed: () {
-                          _launchURL("https://www.unach.mx/images/documentos/decreto_declaratoria_principios_valores.pdf");
-                        },
-                        style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(
-                              const Color(0xFF18386B)),
-                        ),
-                        child: const Text("Ver la Declaratoria de Principios y Valores de la UNACH."),
-                      ),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-            //COORDINACION GENERAL
-            ListView(
-              children: [
-                Column(
-                  children: [
-                    const Padding(
-                      padding: EdgeInsets.only(top: 20.0),
-                      child: Text(
-                        'Coordinación General',
-                        style: TextStyle(
-                            fontSize: 16.0,
-                            fontWeight: FontWeight.bold
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, left: 15, right: 10),
-                      child: Center(
-                        child: Wrap(
-                          alignment: WrapAlignment.start,
-                          children: [
-                            Image.network(
-                              'https://www.cedes.unach.mx/images/UNACH.JPG',
-                              height: 250,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
-                      child: Center(
-                        child: Wrap(
-                          alignment: WrapAlignment.start,
-                          children: const [
-                            Text(
-                              'En el  Centro de Estudios para el Desarrollo Municipal y Políticas Públicas (CEDES), como unidad académica de la Universidad Autónoma de Chiapas, desarrollamos las funciones sustantivas de Docencia,  Investigación y Extensión, además, por su génesis y naturaleza, las actividades del Centro, son plurales y orientadas a incidir en el contexto nacional, y de manera puntual en Chiapas.',
-                              textAlign: TextAlign.start,
-                              style: TextStyle(
-                                fontSize: 16.0,
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
-                      child: Center(
-                        child: Wrap(
-                          alignment: WrapAlignment.start,
-                          children: const [
-                            Text(
-                              'Cabe destacar que, por las características geográficas de nuestro estado, constituye una fuente de conocimiento  sobre el desarrollo municipal, regional y transfronterizo,  como elementos de análisis para impulsar políticas públicas orientadas al desarrollo de la región. ',
-                              textAlign: TextAlign.start,
-                              style: TextStyle(
-                                fontSize: 16.0,
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
-                      child: Center(
-                        child: Wrap(
-                          alignment: WrapAlignment.start,
-                          children: const [
-                            Text(
-                              'Para el CEDES, la educación a distancia es una herramienta nodal para detonar la  equidad en el acceso a la educación superior, en este tenor, a través de sus programas de estudio, caracterizados por su pertinencia, factibilidad  y relevancia, con prospectiva, estos inciden en la formación de profesionales de pregrado totalmente innovadores.',
-                              textAlign: TextAlign.start,
-                              style: TextStyle(
-                                fontSize: 16.0,
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
-                      child: Center(
-                        child: Wrap(
-                          alignment: WrapAlignment.start,
-                          children: const [
-                            Text(
-                              'Tenemos varias sedes municipales, una planta académica y administrativa que nos enorgullece, de alto impacto y vasta experiencia, así como redes de trabajo académico nacionales e internacionales.',
-                              textAlign: TextAlign.start,
-                              style: TextStyle(
-                                fontSize: 16.0,
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
-                      child: Center(
-                        child: Wrap(
-                          alignment: WrapAlignment.start,
-                          children: const [
-                            Text(
-                              'Al ser partícipe de manera responsable en el desarrollo municipal, en la generación y revisión de políticas públicas de nueva y para las nuevas generaciones, asume la significatividad de trabajar con la mirada en lo sostenible, que permita a los municipios, apropiarse y  transitar hacia el cumplimiento de la agenda 2030, para desde lo local atender los retos globales.',
-                              textAlign: TextAlign.start,
-                              style: TextStyle(
-                                fontSize: 16.0,
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0, left: 15),
-                      child: Center(
-                        child: Wrap(
-                          alignment: WrapAlignment.start,
-                          children: const [
-                            Text(
-                              'El Centro de Estudios para el Desarrollo Municipal y Políticas Públicas (CEDES), asume con total responsabilidad social universitaria, su compromiso de participar para fortalecer y consolidar los niveles de bienestar de Chiapas y México.',
-                              textAlign: TextAlign.start,
-                              style: TextStyle(
-                                fontSize: 16.0,
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, left: 15, right: 10),
-                      child: Center(
-                        child: Wrap(
-                          alignment: WrapAlignment.start,
-                          children: [
-                            Image.network(
-                              'https://www.cedes.unach.mx/images/firmadocdos.png',
-                              height: 250,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-            //PLAN DE MEJORA
-            ListView(
-              children: [
-                Column(
-                  children: [
-                    const Padding(
-                      padding: EdgeInsets.only(top: 20.0),
-                      child: Text(
-                        'Plan de Mejora Continua 2020 - 2024',
-                        style: TextStyle(
-                            fontSize: 16.0,
-                            fontWeight: FontWeight.bold
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, left: 15, right: 10),
-                      child: Center(
-                        child: Wrap(
-                          alignment: WrapAlignment.start,
-                          children: [
-                            Image.network(
-                              'https://www.cedes.unach.mx/images/Plan_de_mejora.png',
-                              height: 250,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0, bottom: 20),
-                      child: ElevatedButton(
-                        onPressed: () {
-                          _launchURL("https://www.cedes.unach.mx/images/PlandemejoracontinuaCEDESUNACh.pdf");
-                        },
-                        style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(
-                              const Color(0xFF18386B)),
-                        ),
-                        child: const Text("Leer"),
-                      ),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-            //SITIOS DE INTERES
-            ListView(
-              children: [
-                Column(
-                  children: const [
-                    Padding(
-                      padding: EdgeInsets.only(top: 20.0),
-                      child: Text(
-                        'Sitios de interés',
-                        style: TextStyle(
-                            fontSize: 16.0,
-                            fontWeight: FontWeight.bold
-                        ),
-                      ),
-                    ),
-                    TablaSitiosInteres()
-                  ],
-                ),
-              ],
-            ),*/
           ],
         ),
       ),
