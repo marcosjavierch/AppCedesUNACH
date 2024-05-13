@@ -21,6 +21,7 @@ import 'package:unachcedes/widgets/seccion_noticias.dart';
 import 'package:unachcedes/pages/investigacion.dart';
 import 'package:unachcedes/pages/posgrado.dart';
 import 'package:unachcedes/pages/dvvinternational.dart';
+import 'package:unachcedes/pages/thinktank.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -317,8 +318,8 @@ class MyNavigationDrawer extends StatelessWidget {
                 },
                 textColor: Colors.black,
               ),
-              /*ListTile(
-                title: const Text('thank thenk think thonk thunk'),
+              ListTile(
+                title: const Text('Think Tank Webinar Series'),
                 onTap: () {
                   Navigator.pop(context);
                   Navigator.of(context).push(MaterialPageRoute(
@@ -327,7 +328,7 @@ class MyNavigationDrawer extends StatelessWidget {
                 },
                 textColor: Colors.black,
               ),
-              ListTile(
+              /*ListTile(
                 title: const Text('ADT'),
                 onTap: () {
                   Navigator.pop(context);
