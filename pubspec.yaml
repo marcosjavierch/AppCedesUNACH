@@ -90,6 +90,9 @@ flutter:
     - assets/tablapublicaciones3.png
     - assets/tablapublicaciones4.png
     - assets/tablapublicaciones5.png
+    - assets/subprogramas.png
+    - assets/serviciosocialp.png
+    - assets/tablatutoria.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

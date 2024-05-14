@@ -1,5 +1,9 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:unachcedes/pages/becas.dart';
+import 'package:unachcedes/pages/planeacion.dart';
+import 'package:unachcedes/pages/segurofacultativo.dart';
+import 'package:unachcedes/pages/serviciosocial.dart';
 
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
@@ -21,7 +25,11 @@ import 'package:unachcedes/widgets/seccion_noticias.dart';
 import 'package:unachcedes/pages/investigacion.dart';
 import 'package:unachcedes/pages/posgrado.dart';
 import 'package:unachcedes/pages/dvvinternational.dart';
+import 'package:unachcedes/pages/adt.dart';
 import 'package:unachcedes/pages/thinktank.dart';
+import 'package:unachcedes/pages/directorio.dart';
+import 'package:unachcedes/pages/directoriocip.dart';
+import 'package:unachcedes/pages/eventosacademicos.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -328,7 +336,7 @@ class MyNavigationDrawer extends StatelessWidget {
                 },
                 textColor: Colors.black,
               ),
-              /*ListTile(
+              ListTile(
                 title: const Text('ADT'),
                 onTap: () {
                   Navigator.pop(context);
@@ -349,17 +357,67 @@ class MyNavigationDrawer extends StatelessWidget {
                 textColor: Colors.black,
               ),
               ListTile(
-                title: const Text('Directorio CIP'),
+                title: const Text('Directorio'),
                 onTap: () {
                   Navigator.pop(context);
                   Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => const CIP(),
+                    builder: (context) => const DirectorioCIP(),
                   ));
                 },
                 textColor: Colors.black,
-              ),*/
+              ),
             ],
           ),
+          //EXTENSION VINC
+          ExpansionTile(
+            leading: Icon(Icons.assistant_photo_sharp),
+            title: const Text('Extensión y Vinculación'),
+            textColor: Colors.black,
+            collapsedIconColor: Colors.black,
+            collapsedTextColor: Colors.black,
+            backgroundColor: const Color(0xFFECEFF1),
+            children: [
+              ListTile(
+                title: const Text('Becas'),
+                onTap: () {
+                  Navigator.pop(context);
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => const Becas(),
+                  ));
+                },
+                textColor: Colors.black,
+              ),
+              ListTile(
+                title: const Text('Servicio Social'),
+                onTap: () {
+                  Navigator.pop(context);
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => const ServicioSocial(),
+                  ));
+                },
+                textColor: Colors.black,
+              ),
+              ListTile(
+                title: const Text('Seguro Facultativo'),
+                onTap: () {
+                  Navigator.pop(context);
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => const SeguroFacultativo(),
+                  ));
+                },
+                textColor: Colors.black,
+              ),
+            ],
+          ),
+          //PLANEACION Y EVAL
+          ListTile(
+              leading: Icon(Icons.question_answer),
+              title: const Text('Planeación y Evaluación'),
+              onTap: () =>
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) =>  Planeacion(),
+                  )),
+              textColor: Colors.black),
         ],
       );
 }
