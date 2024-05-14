@@ -1,7 +1,12 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:unachcedes/pages/avisoprovacidad.dart';
 import 'package:unachcedes/pages/becas.dart';
+import 'package:unachcedes/pages/centro_evaluador.dart';
+import 'package:unachcedes/pages/convocatoria.dart';
+import 'package:unachcedes/pages/gdm.dart';
 import 'package:unachcedes/pages/planeacion.dart';
+import 'package:unachcedes/pages/redes_sociales.dart';
 import 'package:unachcedes/pages/segurofacultativo.dart';
 import 'package:unachcedes/pages/serviciosocial.dart';
 
@@ -370,7 +375,7 @@ class MyNavigationDrawer extends StatelessWidget {
           ),
           //EXTENSION VINC
           ExpansionTile(
-            leading: Icon(Icons.assistant_photo_sharp),
+            leading: Icon(Icons.account_tree_outlined),
             title: const Text('Extensión y Vinculación'),
             textColor: Colors.black,
             collapsedIconColor: Colors.black,
@@ -411,11 +416,65 @@ class MyNavigationDrawer extends StatelessWidget {
           ),
           //PLANEACION Y EVAL
           ListTile(
-              leading: Icon(Icons.question_answer),
+              leading: Icon(Icons.assignment_add),
               title: const Text('Planeación y Evaluación'),
               onTap: () =>
                   Navigator.of(context).push(MaterialPageRoute(
                     builder: (context) =>  Planeacion(),
+                  )),
+              textColor: Colors.black),
+          //GMD
+          ListTile(
+              leading: Icon(Icons.book_outlined),
+              title: const Text('GDM'),
+              onTap: () =>
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) =>  GDM(),
+                  )),
+              textColor: Colors.black),
+          //NETWORKS
+          ListTile(
+              leading: Icon(Icons.connect_without_contact),
+              title: const Text('Redes Sociales'),
+              onTap: () =>
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) =>  RedesSociales(),
+                  )),
+              textColor: Colors.black),
+          //DIRECTORIO
+          ListTile(
+              leading: Icon(Icons.contact_mail_outlined),
+              title: const Text('Directorio'),
+              onTap: () =>
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) =>  Directorio(),
+                  )),
+              textColor: Colors.black),
+          //DIRECTORIO
+          ListTile(
+              leading: Icon(Icons.content_paste_search),
+              title: const Text('Centro Evaluador'),
+              onTap: () =>
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) =>  CentroEvaluador(),
+                  )),
+              textColor: Colors.black),
+          //DIRECTORIO
+          ListTile(
+              leading: Icon(Icons.https_outlined),
+              title: const Text('Aviso de privacidad'),
+              onTap: () =>
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) =>  AvisosDePrivacidad(),
+                  )),
+              textColor: Colors.black),
+          //CONVOCATORIA
+          ListTile(
+              leading: Icon(Icons.groups_2_outlined),
+              title: const Text('Convocatorias'),
+              onTap: () =>
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) =>  Convocatoria(),
                   )),
               textColor: Colors.black),
         ],

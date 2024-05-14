@@ -12,6 +12,7 @@ class Directorio extends StatelessWidget {
         drawer: const MyNavigationDrawer(),
         appBar: AppBar(
           title: const Text('Directorio'),
+          centerTitle: true,
           iconTheme: IconThemeData(color: Colors.black),
           titleTextStyle: const TextStyle(
             fontSize: 15,
