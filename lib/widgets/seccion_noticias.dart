@@ -8,6 +8,10 @@ class CarouselNoticias extends StatelessWidget {
   Widget build(BuildContext context) {
     final List<Map<String, String>> imgList = [
       {
+        'image': 'https://www.cedes.unach.mx/images/XIV_Simposio_Internacional_Educacin_y_Cultura_-_copia_2.jpg',
+        'description': 'XIV Simposio Internacional, Educación y Cultura 2024',
+      },
+      {
         'image': 'https://cedes.unach.mx/media/k2/items/cache/c75601cf4b798b9bb038a5b73c93d358_M.jpg',
         'description': 'Eclipse Solar Lunar México 2023',
       },

@@ -93,6 +93,8 @@ flutter:
     - assets/subprogramas.png
     - assets/serviciosocialp.png
     - assets/tablatutoria.png
+    - assets/xivsimposio.png
+    - assets/slidernoticia.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

@@ -7,7 +7,7 @@ class EventosAcademicos extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 2,
+      length: 3,
       child: Scaffold(
         drawer: const MyNavigationDrawer(),
         appBar: AppBar(
@@ -32,6 +32,7 @@ class EventosAcademicos extends StatelessWidget {
                   labelColor: Colors.black,
                   tabs: [
                     Tab(text: 'Think Tank Webinar Series'),
+                    Tab(text: 'XIV Simposio Internacional Educación y Cultura'),
                     Tab(text: 'Coloquios'),
                   ],
                 ),
@@ -67,6 +68,63 @@ class EventosAcademicos extends StatelessWidget {
                       padding: const EdgeInsets.only(top: 20.0),
                       child: Image.network(
                         'https://www.cedes.unach.mx/images/2023/webinars/2023/conferencia_magistral.jpeg',
+                        height: 250,
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+            //XIVSIEC
+            ListView(
+              children: [
+                Column(
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.only(bottom: 20.0, left: 15, top: 25.0),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'Desde UNACH CEDES, se comunica sobre el próximo evento "XIV Simposio Internacional Educación y Cultura", la participación en el evento puede ser mediante la modalidad presencial o virtual. La Universidad de Matanzas y el hotel Bellacosta de Varadero serán las Sedes de esta XIV edición.\n\nEl evento tiene como objetivo: Estimular la presentación, el debate y el intercambio de experiencias, así como la colaboración entre profesionales e interinstitucional en el ámbito de las temáticas que se convocan mediante distintos objetivos y temáticas que van de la mano de actividades del programa.\n\nVer más en el siguiente enlace donde se podrá observar información acerca del programa, inscripciones así como un apartado de preguntas frecuentes: https://xivsimposio.edunetic.com/#programa\n\nLa fecha en la imagen es sobre el programa general.',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0),
+                      child: Image.network(
+                        'https://www.cedes.unach.mx/images/XIV_Simposio_Internacional_Educacin_y_Cultura_-_copia_2.jpg',
+                        height: 250,
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(bottom: 20.0, left: 15, top: 25.0),
+                      child: Center(
+                        child: Wrap(
+                          alignment: WrapAlignment.start,
+                          children: const [
+                            Text(
+                              'Información adicional para inscripciones:\nhttps://xivsimposio.edunetic.com/#incripcion',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 14.0,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0),
+                      child: Image.asset(
+                        'assets/xivsimposio.png',
                         height: 250,
                       ),
                     ),

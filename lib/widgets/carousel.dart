@@ -8,6 +8,7 @@ class Carousel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final List<String> imgList = [
+      'assets/slidernoticia.jpg',
       'assets/carousel_one.jpg',
       'assets/carousel_two.jpg',
       'assets/carousel_three.jpg',
