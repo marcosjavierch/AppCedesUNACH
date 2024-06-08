@@ -20,6 +20,7 @@ import 'package:unachcedes/pages/acerca_de.dart';
 import 'package:unachcedes/pages/bolsa_de_trabajo.dart';
 import 'package:unachcedes/pages/control_escolar.dart';
 import 'package:unachcedes/pages/docentes.dart';
+import 'package:unachcedes/pages/chatscreen.dart';
 import 'package:unachcedes/pages/egresados.dart';
 import 'package:unachcedes/pages/estudiantes.dart';
 import 'package:unachcedes/pages/oferta_educativa.dart';
@@ -82,7 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         centerTitle: true,
         flexibleSpace: Container(
-          margin: EdgeInsets.only(top: 30.0), // Ajusta el margen superior para mover la imagen hacia abajo
+          margin: EdgeInsets.only(top: 32.0), // Ajusta el margen superior para mover la imagen hacia abajo
           child: Image(
             image: AssetImage('assets/template.png'),
             fit: BoxFit.contain,
@@ -93,6 +94,13 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       ),
       drawer: const MyNavigationDrawer(),
+
+      floatingActionButton: FloatingActionButton.extended(
+          label: Text('Chat con IA'),
+          icon: Icon(Icons.message),
+          onPressed: () {Navigator.push(context,
+              MaterialPageRoute(builder: (context)=>ChatScreen()),);},
+        ),
        
       body: SingleChildScrollView(
         child: Column(
@@ -475,6 +483,15 @@ class MyNavigationDrawer extends StatelessWidget {
               onTap: () =>
                   Navigator.of(context).push(MaterialPageRoute(
                     builder: (context) =>  Convocatoria(),
+                  )),
+              textColor: Colors.black),
+          //CHAT IA
+          ListTile(
+              leading: Icon(Icons.message),
+              title: const Text('Chat con IA'),
+              onTap: () =>
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) =>  ChatScreen(),
                   )),
               textColor: Colors.black),
         ],
